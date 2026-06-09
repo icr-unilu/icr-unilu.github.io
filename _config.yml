@@ -233,6 +233,24 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  people:
+    output: true
+    permalink: /people/:path/
+  research:
+    output: true
+    permalink: /research/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  software:
+    output: true
+    permalink: /software/:path/
+  events:
+    output: true
+    permalink: /events/:path/
+  bsp:
+    output: true
+    permalink: /bsp/:path/
 
 
 # These settings control how pages and collections are included in the site
