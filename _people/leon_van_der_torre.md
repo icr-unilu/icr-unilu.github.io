@@ -5,16 +5,16 @@ role: Full Professor
 
 order: 10
 
-image: /images/people/leon.jpg
+image: /images/people/leon.jpeg
 
 description: >
   Head of the Individual and Collective Reasoning group.
 
 social:
-  - icon: ti-info
+  - icon: fas fa-globe
     link: "https://www.uni.lu/fstm-en/people/leon-van-der-torre/"
-  - icon : ti-github # themify icon pack : https://themify.me/themify-icons
+  - icon : fab fa-github # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com"
-  - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+  - icon : fas fa-envelope # themify icon pack : https://themify.me/themify-icons
     link : "mailto:leon.vandertorre@uni.lu"
 ---
