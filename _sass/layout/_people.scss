@@ -5,82 +5,113 @@
   margin-top: 2rem;
 }
 
-/* CARD BASE */
+/* =========================
+   CARD
+   ========================= */
 .person-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 14px;
 
-  border: 1px solid rgba(128, 128, 128, 0.18);
-
+  border: 1px solid rgba(127, 127, 127, 0.18);
   background: var(--global-bg-color);
-  transition: all 0.25s ease;
+
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .person-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(128, 128, 128, 0.35);
+  border-color: rgba(127, 127, 127, 0.35);
+}
+
+/* =========================
+   PHOTO WRAPPER (CLIP + OVERLAY)
+   ========================= */
+.person-photo-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  margin-bottom: 1rem;
 }
 
 /* IMAGE */
 .person-photo {
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-
-  margin-bottom: 1rem;
 
   display: block;
+
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.person-card:hover .person-photo {
-  transform: scale(1.05);
+/* zoom + fade immagine */
+.person-photo-wrapper:hover .person-photo {
+  transform: scale(1.06);
   opacity: 0.85;
 }
 
-/* NAME */
-.person-card h3 {
+/* =========================
+   OVERLAY ICONS
+   ========================= */
+.person-links {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.9rem;
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* show on hover */
+.person-photo-wrapper:hover .person-links {
+  opacity: 1;
+}
+
+/* icons */
+.person-links a {
+  color: white;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+/* remove theme interference */
+.person-links a::before,
+.person-links a::after {
+  content: none !important;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+.person-name {
   margin: 0.3rem 0;
   text-align: center;
 }
 
-/* ROLE */
 .person-role {
   margin: 0.2rem 0 0.8rem 0;
   text-align: center;
+
   font-weight: 600;
   opacity: 0.8;
 }
 
-/* DESCRIPTION */
 .person-description {
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.9;
-}
-
-/* LINKS */
-.person-links {
-  margin-top: 0.8rem;
-
-  display: flex;
-  justify-content: center;
-  gap: 0.9rem;
-}
-
-.person-links a {
-  text-decoration: none;
-  color: var(--global-text-color);
-  font-size: 1.1rem;
-}
-
-/* safety: rimuove effetti strani del tema */
-.person-links a::before,
-.person-links a::after {
-  content: none !important;
+  line-height: 1.4;
 }

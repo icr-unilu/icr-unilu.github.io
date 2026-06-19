@@ -13,18 +13,21 @@ author_profile: false
   <div class="person-card">
 
     <div class="person-photo-wrapper">
+
       <img src="{{ person.image }}" alt="{{ person.title }}" class="person-photo">
-
-      {% if person.social %}
-      <div class="person-links">
-        {% for item in person.social %}
-          <a href="{{ item.link }}" target="_blank">
-            <i class="{{ item.icon }}"></i>
-          </a>
-        {% endfor %}
+    
+      <div class="person-overlay">
+        {% if person.social %}
+        <div class="person-links">
+          {% for item in person.social %}
+            <a href="{{ item.link }}" target="_blank">
+              <i class="{{ item.icon }}"></i>
+            </a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
-
+    
     </div>
 
     <h3 class="person-name">{{ person.title }}</h3>

@@ -11,8 +11,8 @@ main:
   - title: "About"
     url: /
 
-  - title: "Research"
-    url: /research/
+#  - title: "Research"
+#    url: /research/
 
   - title: "Team"
     url: /people/
@@ -20,7 +20,7 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Software systems"
+  - title: "Software"
     url: /software/
 
   - title: "RoboLab"
