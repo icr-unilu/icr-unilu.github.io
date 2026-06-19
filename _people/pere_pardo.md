@@ -1,5 +1,5 @@
 ---
-title: Kenneth Skiba
+title: Pere Pardo Ventura
 
 role: Postdoctoral Researcher
 
@@ -13,9 +13,9 @@ description: >
 
 social:
   - icon: fas fa-globe
-    link: "https://www.uni.lu/fstm-en/people/kenneth-skiba/"
+    link: "https://www.uni.lu/fstm-en/people/pere-pardo-ventura/"
   - icon : fab fa-github # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com"
   - icon : fas fa-envelope # themify icon pack : https://themify.me/themify-icons
-    link : "mailto:kenneth.skiba@uni.lu"
+    link : "mailto:pere.pardo@uni.lu"
 ---

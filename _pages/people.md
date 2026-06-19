@@ -1,7 +1,7 @@
 ---
 title: ICR Team Members
 permalink: /people/
-layout: archive
+layout: splash
 author_profile: false
 ---
 
